@@ -1,5 +1,6 @@
 # Person_spring_boot_V2
-Esta es la versión 2 del crud de spring boot.
+
+Esta es la versión 2 del CRUD de spring boot.
 
 En esta versión del CRUD usando Spring Boot, implementamos nuevas tecnologías e ideas.
 
