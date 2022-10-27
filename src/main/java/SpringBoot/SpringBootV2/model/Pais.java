@@ -2,12 +2,10 @@ package SpringBoot.SpringBootV2.model;
 
 import lombok.Data;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Data
+@Entity
 @Table(name = "pais")
 public class Pais {
     @Id

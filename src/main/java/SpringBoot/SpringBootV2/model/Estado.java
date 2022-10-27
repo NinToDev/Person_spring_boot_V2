@@ -12,5 +12,8 @@ public class Estado {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String nombre;
-    private Long pais_id;
+
+    @ManyToOne
+    @JoinColumn(name = "pais_id")
+    private Pais pais;
 }

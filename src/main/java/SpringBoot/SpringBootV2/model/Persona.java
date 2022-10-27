@@ -12,6 +12,12 @@ public class Persona {
     private String nombre;
     private String apellido;
     private int edad;
-    private Long pais_id;
-    private Long estado_id;
+
+    @ManyToOne
+    @JoinColumn(name = "pais_id")
+    private Pais pais;
+
+    @ManyToOne
+    @JoinColumn(name = "estado_id")
+    private Estado estado;
 }

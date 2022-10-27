@@ -22,7 +22,7 @@ public class EstadoController {
     private EstadoService estadoService;
 
     @GetMapping(value = "/{id}")
-    private ResponseEntity<List<Estado>> getAllByPaisId(@PathVariable("{id}") Long id){
+    private ResponseEntity<List<Estado>> getAllByPaisId(@PathVariable("id") Long id){
         return ResponseEntity.ok(estadoService.obtenerEstadosPorIdPais(id));
     }
 }
